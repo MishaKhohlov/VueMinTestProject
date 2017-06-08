@@ -7,8 +7,13 @@
 </head>
 <body>
 <div id="app">
-    <sidebar v-on:add-todo="addTodoTotal"></sidebar>
-    <todo-list v-bind:data="todos"></todo-list>
+    <div>
+        <router-link to="/">Home</router-link>
+        <router-link to="/bar/params">Another Page</router-link>
+        <router-link to="/bar/params/profile">Another Page Include</router-link>
+    </div>
+
+    <router-view></router-view>
 </div>
 </body>
 </html>
